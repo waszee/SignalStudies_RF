@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep 15 18:31:57 2020
-The Coded is GNU license 3 with no warranty implied. Use at own risk.
+The Coded is MIT license with no warranty implied. Use at own risk.
 @author: waszee
 """
 
@@ -176,10 +176,10 @@ def main():
                     count=0
                     while pygame.mixer.get_busy():
                         count = 1 + count
-                    #pygame.time.wait(int(T3*1000)) #ketter spacing interval
-                plt.plot(d)
-                plt.show()
-                print()
+                #pygame.time.wait(int(T3*1000)) #ketter spacing interval
+                #plt.plot(d)
+                #plt.show()
+                #print()
 
     except KeyboardInterrupt:
         print('interupt by keyboard control c detected')
