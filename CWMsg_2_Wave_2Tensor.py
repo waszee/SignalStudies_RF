@@ -190,7 +190,7 @@ def plot_spectrogram(msg, cw_msg, spec, sample_rate, L, starts, mappable=None):
     #added some padding to keep emissions from being too narrow to see and help plot view
     specshowx = np.repeat(specshow, axis=0, repeats=2)
     # rescale the data along time axis to -1 to 1 range
-    dscaled = scale(specshowx, out_range=(-1, 1), axis=0)
+    dscaled = scale(specshowx, out_range=(-1, 1), axis=None)
 
     # xstretch is just a factor to help view differ amounts of signals - not optimized yet
     xstretch = secs*1000/(URANGE-LRANGE)
